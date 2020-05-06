@@ -4,9 +4,9 @@ int main(){
 
     FILE *fp;
     char arr[250];
-    fp = fopen("file.txt","r");
-    while( fscanf(fp,"%s",arr) != EOF ){
-        printf("%s",arr);
+    fp = fopen("file.txt","r"); //file.txt dosyasını okur.
+    while( fscanf(fp,"%s",arr) != EOF ){ //dosya sonuna gelene kadar dizinin bütün elemanlarını alır.
+        printf("%s",arr); // döngünün içinde bütün karakterleri yazdırır.
     }
     fclose(fp);
 
