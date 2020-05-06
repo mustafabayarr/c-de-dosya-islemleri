@@ -8,7 +8,7 @@ int main(){
     while( fscanf(fp,"%s",arr) != EOF ){ //dosya sonuna gelene kadar dizinin bütün elemanlarını alır.
         printf("%s",arr); // döngünün içinde bütün karakterleri yazdırır.
     }
-    fclose(fp);
+    fclose(fp); // son olarak dosyayı kapatıyoruz.
 
     return 0;
 }
